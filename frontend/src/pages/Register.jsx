@@ -3,12 +3,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import GlassCard from "../components/GlassCard";
 
-let supabase;
-try {
-  supabase = require("../supabaseClient").default;
-} catch (e) {
-  supabase = null;
-}
+import { supabase } from "../lib/supabaseClient";
 
 export default function Register() {
   const navigate = useNavigate();
