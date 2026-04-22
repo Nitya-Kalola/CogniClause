@@ -1,0 +1,17 @@
+{
+  "name": "cogniclause-root",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"set PYTHONUTF8=1 && cd backend && venv\\Scripts\\python -m uvicorn main:app --reload\"",
+
+
+    "setup:backend": "python -m venv backend/venv && backend\\Scripts\\activate && pip install -r backend/requirements.txt",
+    "setup:frontend": "npm install --prefix frontend",
+    "setup": "npm run setup:frontend && npm run setup:backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "tailwindcss": "^4.2.2"
+  }
+}
+

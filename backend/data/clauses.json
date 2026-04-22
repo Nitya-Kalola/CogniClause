@@ -1,0 +1,22 @@
+[
+  {
+    "clause": "The company may terminate the agreement at any time without notice.",
+    "risk_level": "High",
+    "category": "Termination"
+  },
+  {
+    "clause": "All confidential information must be kept secret.",
+    "risk_level": "Low",
+    "category": "Confidentiality"
+  },
+  {
+    "clause": "The supplier shall be liable for damages resulting from negligence.",
+    "risk_level": "Medium",
+    "category": "Liability"
+  },
+  {
+    "clause": "The customer shall pay all fees within thirty days of invoice receipt.",
+    "risk_level": "Low",
+    "category": "Payment"
+  }
+]
